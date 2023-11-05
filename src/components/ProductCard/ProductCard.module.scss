@@ -1,0 +1,83 @@
+@import '../../theme.scss';
+
+.card {
+	position: relative;
+	margin: 0 15px;
+	&__title {
+		color: $black;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		margin-top: 24px;
+	}
+	&__image {
+		width: 100%;
+		height: 250px;
+		object-fit: cover;
+	}
+	&__price {
+		color: $black;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		margin-top: 24px;
+	}
+	&__discount {
+		color: #898989;
+		font-family: Manrope;
+		font-size: 22px;
+		font-style: normal;
+		font-weight: 400;
+		line-height: normal;
+		text-decoration-line: line-through;
+	}
+	&__button {
+		width: 100%;
+		border-radius: 7px;
+		background: $green;
+		color: $white;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		border: none;
+		cursor: pointer;
+		padding: 17px 0;
+		margin-top: 24px;
+	}
+	&__selected {
+		width: 100%;
+		border-radius: 7px;
+		border: 3px solid #55b74c;
+		background: #f9f9f9;
+		color: #55b74c;
+		text-align: center;
+		font-size: 18px;
+		font-style: normal;
+		font-weight: 700;
+		line-height: normal;
+		cursor: pointer;
+		padding: 14px 0;
+		margin-top: 24px;
+	}
+	&__like {
+		width: 30px;
+		height: 30px;
+		border-radius: 4px;
+		background: #fff;
+		border: none;
+		position: absolute;
+		right: 15px;
+		top: 15px;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		cursor: pointer;
+	}
+	&__heart {
+		font-size: 18px;
+		color: $green;
+	}
+}
